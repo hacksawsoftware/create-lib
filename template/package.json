@@ -1,0 +1,33 @@
+{
+  "name": "TEMPLATE",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "./dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:docs": "pnpm exec typedoc src/index.ts",
+    "dev": "tsc --watch",
+    "format": "pnpm biome format",
+    "format:fix": "pnpm biome format --write",
+    "lint": "pnpm biome lint",
+    "lint:fix": "pnpm biome lint --write",
+    "prepublish": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": "",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typedoc": "^0.27.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

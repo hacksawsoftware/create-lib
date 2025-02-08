@@ -1,0 +1,22 @@
+{
+  "resolveJsonModule": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "preserveConstEnums": true,
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
+
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "outDir": "./dist",
+    "strict": true,
+    "rootDir": "./src"
+  },
+  "include": ["src", "test"]
+}

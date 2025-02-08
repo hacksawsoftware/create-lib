@@ -1,0 +1,19 @@
+{
+  "name": "@hacksaw/create-lib",
+  "version": "0.0.1",
+  "description": "A minimal, ESM TypeScript library template",
+  "type": "module",
+  "bin": "cli/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jacob Stordahl",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.10.0",
+    "fs-extra": "^11.3.0",
+    "ignore": "^7.0.3",
+    "picocolors": "^1.1.1"
+  }
+}
