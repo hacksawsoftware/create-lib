@@ -10,6 +10,7 @@
   "keywords": [],
   "author": "Jacob Stordahl",
   "license": "MIT",
+  "repository": "https://github.com/hacksawsoftware/create-lib",
   "dependencies": {
     "@clack/prompts": "^0.10.0",
     "fs-extra": "^11.3.0",
