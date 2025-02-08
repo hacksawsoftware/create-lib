@@ -37,7 +37,7 @@ async function main() {
     await fs.copy(templateDir, targetDir);
 
     // Replace TEMPLATE with project name in all files
-    const files = fs.readdir(targetDir, { recursive: true });
+    const files = await fs.readdir(targetDir, { recursive: true });
     for (const file of files) {
       const filePath = path.join(targetDir, file);
       const stats = await fs.stat(filePath);
@@ -58,11 +58,12 @@ async function main() {
       npm install
       npm run dev`, 'Next steps');
 
-    note(`To setup automatics publishing to npm and jsr:
+    note(`To setup automatic publishing to npm and jsr:
       - Push to a Github repo
       - Add your repo url to the repository field in package.json
       - Connect your Github repo with your jsr account
-      - Obtain an npm token from your npm account and save it as a secret in Github`, 'Publishing');
+      - Obtain an npm token from your npm account and save it as a secret in Github
+      - Create a release in Github to trigger publishing`, 'Publishing');
       
   } catch (error) {
     s.stop('Failed to create project');
