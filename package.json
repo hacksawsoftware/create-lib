@@ -1,9 +1,11 @@
 {
   "name": "@hacksaw/create-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal, ESM TypeScript library template",
   "type": "module",
-  "bin": "cli/index.js",
+  "bin": {
+    "create-lib": "cli/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
